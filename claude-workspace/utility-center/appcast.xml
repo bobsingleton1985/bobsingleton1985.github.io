@@ -4,23 +4,21 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Utility Center</title>
         <item>
-            <title>3.3.2</title>
-            <pubDate>Tue, 27 Oct 2026 14:18:26 +0300</pubDate>
-            <sparkle:version>3.3.2</sparkle:version>
-            <sparkle:shortVersionString>3.3.2</sparkle:shortVersionString>
+            <title>3.3.3</title>
+            <pubDate>Tue, 27 Oct 2026 19:19:22 +0300</pubDate>
+            <sparkle:version>3.3.3</sparkle:version>
+            <sparkle:shortVersionString>3.3.3</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Utility Center 3.3.2
+            <description sparkle:format="markdown"><![CDATA[# Utility Center 3.3.3
 
-- Household network addresses are no longer built into the app. They are read from a local settings file (`~/Library/Application Support/UtilityCenter/site.json`); without it, network features stay disabled and change nothing.
-- Turning the Chuwi exit node on no longer forces LAN access off.
-- Exit-node availability trusts the selected node's own status and reports UNKNOWN instead of a false "offline".
-- Signed in-app updates via Sparkle 2.10.1 (Ed25519); automatic checks and installs remain off.
+- Fix: Chuwi exit-node toggle failed with "Не удалось прочитать tailscale status --json" when the app was launched from Finder. The Tailscale.app binary ignored the command and printed a GUI notice instead of running as a CLI; the app now forces CLI mode (`TAILSCALE_BE_CLI=1`).
+- Non-JSON output from Tailscale is now shown in the error instead of being hidden.
 ]]></description>
-            <enclosure url="https://bobsingleton1985.github.io/claude-workspace/utility-center/Utility-Center-3.3.2-macos14-arm64.zip" length="1215927" type="application/octet-stream" sparkle:edSignature="0hHsBMCsziD01wWU/gT/rb2wifRTEI4MHahk8YoFtK5tDwdZj0f3y/VB+kPUe3XRhcIfwIkKM5ljkuuot5RsBA=="></enclosure>
+            <enclosure url="https://bobsingleton1985.github.io/claude-workspace/utility-center/Utility-Center-3.3.3-macos14-arm64.zip" length="1217919" type="application/octet-stream" sparkle:edSignature="OgpNel2gA68be9C3MkUFEINH3yGvdxfItr4izEYOM5jVu1wsryBwa9ETsjtH9S4JegrWjmR5kAQSQYdcEFdKCw=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: EcaPfnBLda6ht+jLlheI2WXXmS8IMWqV9RC/XFotY2gyoPkgb2Ke1ZCRA++TtxquCh0rx8ab6gGg5fX1JR4ODQ==
-length: 1759
+edSignature: jcgMykTXWrxN1k0W+EwjckT6ahXADMMpWxCr1QjIH9OM49HdLI0XNxwgNR7psfyAbI1bad/Ou/Go0ImzPJEECA==
+length: 1638
 -->
