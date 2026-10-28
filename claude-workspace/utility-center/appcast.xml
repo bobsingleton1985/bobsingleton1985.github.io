@@ -4,21 +4,23 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Utility Center</title>
         <item>
-            <title>3.3.3</title>
-            <pubDate>Tue, 27 Oct 2026 19:19:22 +0300</pubDate>
-            <sparkle:version>3.3.3</sparkle:version>
-            <sparkle:shortVersionString>3.3.3</sparkle:shortVersionString>
+            <title>3.4.0</title>
+            <pubDate>Wed, 28 Oct 2026 09:07:23 +0300</pubDate>
+            <sparkle:version>3.4.0</sparkle:version>
+            <sparkle:shortVersionString>3.4.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Utility Center 3.3.3
+            <description sparkle:format="markdown"><![CDATA[# Utility Center 3.4.0
 
-- Fix: Chuwi exit-node toggle failed with "Не удалось прочитать tailscale status --json" when the app was launched from Finder. The Tailscale.app binary ignored the command and printed a GUI notice instead of running as a CLI; the app now forces CLI mode (`TAILSCALE_BE_CLI=1`).
-- Non-JSON output from Tailscale is now shown in the error instead of being hidden.
+- New: **Monitoring** — a card at the top of the main window and a separate «Мониторинг» window. Shows agents, the Claude route and systems with plain statuses (ОК / ВНИМ. / РИСК / СБОЙ / НЕТ ДАННЫХ), the time of the last check, and a log of state changes. Click a row for details.
+- Read-only: the window only reads the status page of the collector on Mac mini; it never restarts or changes anything.
+- Data older than 3 minutes is marked as stale instead of being shown as healthy.
+- The address is not built into the app: optional `monitorURL` in `site.json`, otherwise the Mac mini address from `site.json`.
 ]]></description>
-            <enclosure url="https://bobsingleton1985.github.io/claude-workspace/utility-center/Utility-Center-3.3.3-macos14-arm64.zip" length="1217919" type="application/octet-stream" sparkle:edSignature="OgpNel2gA68be9C3MkUFEINH3yGvdxfItr4izEYOM5jVu1wsryBwa9ETsjtH9S4JegrWjmR5kAQSQYdcEFdKCw=="></enclosure>
+            <enclosure url="https://bobsingleton1985.github.io/claude-workspace/utility-center/Utility-Center-3.4.0-macos14-arm64.zip" length="1295982" type="application/octet-stream" sparkle:edSignature="nWJkvB1UfJREqaX2ScyMhcF2gnohHps5TbKWW2XCLgkWYVdkuFPinYwRG6WA/mG6Lr2LC6xhzc32PPMnT2B6Dg=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: jcgMykTXWrxN1k0W+EwjckT6ahXADMMpWxCr1QjIH9OM49HdLI0XNxwgNR7psfyAbI1bad/Ou/Go0ImzPJEECA==
-length: 1638
+edSignature: PShBK6ZKObkqYfxhUx7l8QGw3uTSGarccMGruoDtOvfV9uQid5WbRzpUIPt6gJk8FasR8qqbizkNFOQeFGG2CQ==
+length: 1906
 -->
